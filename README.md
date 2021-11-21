@@ -15,8 +15,13 @@ using FranklinTheorems
 Franklin.include_external_config(FranklinTheorems.config_path()) 
 ```
 
-Additionally, FranklinTheorems also creates the `.theorem`, `.theorem-header`, `.theorem-type`, `.theorem-accordion`, `.theorem-panel`, `.theorem-accordion-text`, and `.proof-box` div environments. We provide a [CSS file](/src/FranklinTheorems.css) for the tufte Franklin style.
+Additionally, FranklinTheorems also creates the `.theorem`, `.theorem-header`, `.theorem-type`, `.theorem-accordion`, `.theorem-panel`, `.theorem-accordion-text`, and `.proof-box` div environments. We provide a [CSS file](/src/FranklinTheorems.css) for the tufte Franklin style. For tufte Franlin style do the following: 
+
+* Put the `FranklinTheorems.cs` file in `site\_css` folder, and
+*  then in the file `style.html` located in `site\_layout` folder add the line `<link rel="stylesheet" href="/css/FranklinTheorems.css">` after the line `<link rel="stylesheet" href="/css/adjust.css"> <!-- sheet to overwrite some clashing styles -->`
+*  
 After installing the package, the following Julia code will return the path to a local copy of the CSS file:
+
 ```julia
 using FranklinTheorems
 FranklinTheorems.css_path()
@@ -24,7 +29,7 @@ FranklinTheorems.css_path()
 
 ## Usage
 
-At the top of every markdown webpage you use this plugin for, include the line
+At the top of every markdown webpage (.md files) you use this plugin for, include the line
 ```latex
 \enabletheorems
 ```
