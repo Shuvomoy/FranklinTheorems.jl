@@ -19,7 +19,8 @@ Additionally, FranklinTheorems also creates the `.theorem`, `.theorem-header`, `
 
 * Put the `FranklinTheorems.cs` file in `site\_css` folder, and
 *  then in the file `style.html` located in `site\_layout` folder add the line `<link rel="stylesheet" href="/css/FranklinTheorems.css">` after the line `<link rel="stylesheet" href="/css/adjust.css"> <!-- sheet to overwrite some clashing styles -->`
-*  
+*  Ensure something like `FranklinTheorems = "f9b7297b-b8b9-4883-a559-829bcd556a2f"` is in the list of `[Deps]` in the `Project.toml`
+
 After installing the package, the following Julia code will return the path to a local copy of the CSS file:
 
 ```julia
