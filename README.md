@@ -65,7 +65,7 @@ Which would then export the `corollary` environment and `corollaryref` command, 
 #### Proofs
 
 You can also include proofs, which creates a new CSS class and has a QEQ box at its end.
-To start and end a proof, use `\begin{proof}...\end{proof}`.
+To start and end a proof, use `\begin{proof}...\end{proof}`. **The proof environement does not admit spaces, so just use proof manually.**
 
 In order to hide longer proofs, we also provide an interactive `dropdown` latex-style environment.
 Then the syntax
